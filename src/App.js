@@ -4,15 +4,17 @@ import products from "./products";
 const titleStore = "Pc Store";
 const desc = "Where you will find the newest pc parts for your build";
 
-const productsList = products.map((product) => (
-  <tr>
-    <th>{product.image}</th>
-    <td>{product.name}</td>
-    <td>{product.price}</td>
-  </tr>
-));
-
 function App() {
+  const productsList = products.map((product) => {
+    return (
+      <div>
+        <img className="image-size" src={product.image} alt="" />
+        <h2>{product.name}</h2>
+        <p>{product.price}</p>
+      </div>
+    );
+  });
+
   return (
     <div className="App">
       <header className="App-header">
@@ -22,22 +24,15 @@ function App() {
         <div>
           <p>{desc}</p>
         </div>
-        <div></div>
-
         <div>
-          <table className>
-            <tbody>
-              <tr>
-                <td>{productsList}</td>
-                <td>productsList</td>
-              </tr>
-              {/* <tr>
-                <td>Name</td>
-                <td>Price</td>
-              </tr> */}
-            </tbody>
-          </table>
+          <img
+            className="bg-size"
+            src="https://www.athomepc.co.uk/img/layerslider/homePageHeader/after.jpg"
+            alt=""
+          />
         </div>
+
+        <div>{productsList}</div>
       </header>
     </div>
   );
