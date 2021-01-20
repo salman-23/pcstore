@@ -1,6 +1,16 @@
 import "./App.css";
+import products from "./products";
+
 const titleStore = "Pc Store";
 const desc = "Where you will find the newest pc parts for your build";
+
+const productsList = products.map((product) => (
+  <tr>
+    <th>{product.image}</th>
+    <td>{product.name}</td>
+    <td>{product.price}</td>
+  </tr>
+));
 
 function App() {
   return (
@@ -12,11 +22,21 @@ function App() {
         <div>
           <p>{desc}</p>
         </div>
+        <div></div>
+
         <div>
-          <img
-            src="https://static.techspot.com/images2/news/bigimage/2017/05/2017-05-02-image-2.jpg"
-            alt=""
-          />
+          <table className>
+            <tbody>
+              <tr>
+                <td>{productsList}</td>
+                <td>productsList</td>
+              </tr>
+              {/* <tr>
+                <td>Name</td>
+                <td>Price</td>
+              </tr> */}
+            </tbody>
+          </table>
         </div>
       </header>
     </div>
