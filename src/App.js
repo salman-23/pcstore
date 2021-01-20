@@ -1,22 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+const titleStore = "Pc Store";
+const desc = "Where you will find the newest pc parts for your build";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <title className="title">{titleStore}</title>
+        <p>{desc}</p>
+        <Image
+          src="https://www.athomepc.co.uk/img/layerslider/homePageHeader/after.jpg"
+          className="image"
+          href=""
+        />
       </header>
     </div>
   );
