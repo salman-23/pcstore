@@ -1,9 +1,12 @@
+import products from "../products";
+import "../App.css";
 import PcStoreItem from "./PcStoreItem";
-import products from "./products";
 
-const ProductsList = products.map((product) => {
-  <PcStoreItem key={product.id} product={product} />;
-});
-<div>{ProductsList}</div>;
+const PcStore = () => {
+  const productsList = products.map((product) => {
+    return <PcStoreItem key={product.id} product={product} />;
+  });
+  return <div>{productsList}</div>;
+};
 
 export default PcStore;
