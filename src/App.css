@@ -7,9 +7,25 @@
   height: 300px;
 }
 
+.items-images {
+  display: block;
+  margin: 2rem auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .bg-size {
   width: 900px;
   height: 500px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -24,14 +40,14 @@
 }
 
 .App-header {
-  background-color: #4da8da;
+  background-color: #eefbfb;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #203647;
 }
 
 .App-link {
