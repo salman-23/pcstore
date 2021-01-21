@@ -1,5 +1,5 @@
 import products from "../products";
-import "../App.css";
+import { Button } from "../styles";
 import PcStoreItem from "./PcStoreItem";
 
 const PcStore = () => {

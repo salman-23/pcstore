@@ -18,7 +18,7 @@ const products = [
     name: "AMD Ryzen 7 5800x ",
     price: "$449.99",
     image:
-      "https://images-na.ssl-images-amazon.com/images/I/71WPGXQLcLL._AC_SL1384_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/610Rt4BtEWL._AC_SL1500_.jpg",
   },
 ];
 

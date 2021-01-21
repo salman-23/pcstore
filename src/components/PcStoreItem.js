@@ -1,13 +1,16 @@
-import "../App.css";
+import { ImageSize, List, PriceSize } from "../styles";
 
 const PcStoreItem = (props) => {
   const product = props.product;
   return (
-    <div className="list">
-      <img className="image-size items-images" src={product.image} alt="" />
+    <List>
+      <ImageSize src={product.image} alt="" />
       <h2>{product.name}</h2>
-      <p>{product.price}</p>
-    </div>
+      <PriceSize>{product.price}</PriceSize>
+      {/* <Button>
+
+      <Button/>  */}
+    </List>
   );
 };
 
